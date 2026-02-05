@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.874);
+  font-weight: 500;
+  position: sticky;
+  top: 0%;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 7rem;
+  max-width: 80vw;
+  width: 100%;
+  margin: 0 auto;
+  gap: 11rem;
+}
+nav {
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  padding: 0.5rem 1rem;
+  gap: 2rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+main {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#headerContactButton {
+  padding: 0.5rem 1.2rem;
+  background-color: rgba(128, 128, 128, 0.068);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 40px;
+  letter-spacing: 0.9px;
+}
+#headerCTA {
+  padding: 0.5rem 1.2rem;
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 40px;
+  letter-spacing: 0.6px;
+}
+main {
+  padding-top: 5rem;
+}
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./public/hero.svg");
+  background-size: cover;
+  background-position: right center;
+  margin-top: -10%;
+  padding: 6rem 0rem;
+}
+.heroSection__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 2rem;
+  width: 100%;
+}
+.heroSection a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(58, 58, 58, 0.28);
+  padding: 0.1rem 0.4rem;
+  width: 22%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.heroSection a > span {
+  background: green;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-weight: 100;
+}
+#span--arrow {
+  background: white;
+  color: black;
+  padding: 2px 4px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-weight: 100;
+  font-size: 10px;
+}
+.heroSection h1 {
+  color: white;
+  line-height: 5rem;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+}
+.heroSection p {
+  font-size: 1.1rem;
+  color: rgb(237, 237, 237);
+  width: 35%;
+  line-height: 1.8rem;
+  margin: auto;
+  font-weight: 100;
+}
+
+.heroSection #heroCTA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22%;
+  border-radius: 40px;
+  margin: auto;
+  background-color: rgba(176, 176, 176, 0.42);
+}
+#heroCTA input {
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+  color: white;
+  border-radius: 40px;
+  width: 70%;
+}
+#heroCTA input::placeholder {
+  color: rgba(255, 255, 255, 0.646);
+}
+#heroCTA button {
+  padding: 5px 6px;
+  color: black;
+  border-radius: 40px;
+  border: none;
+  width: 25%;
+  font-size: 1rem;
+  font-weight: 100;
+}
+#documentationSnapshot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  border-radius: 20px;
+}
+#companyPartner {
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 26rem auto 0rem;
+  width: 100%;
+  max-width: 50%;
+  gap: 4rem;
+  column-gap: 6rem;
+}
+
+#companyPartner img {
+  width: 8rem;
+}
