@@ -8,11 +8,13 @@
 header {
   width: 100%;
   color: rgba(255, 255, 255, 0.874);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   font-weight: 500;
   position: sticky;
   top: 0%;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(15.5px);
+  z-index: 100;
   -webkit-backdrop-filter: blur(15.5px);
 }
 header .container {
@@ -62,7 +64,7 @@ main {
   padding-top: 5rem;
 }
 /* Hero Section */
-.heroSection {
+#hero {
   width: 100%;
   min-height: 100vh;
   background: url("./public/hero.svg");
@@ -71,7 +73,7 @@ main {
   margin-top: -10%;
   padding: 6rem 0rem;
 }
-.heroSection__content {
+.hero__content {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -79,7 +81,7 @@ main {
   gap: 2rem;
   width: 100%;
 }
-.heroSection a {
+#hero a {
   text-decoration: none;
   color: white;
   background-color: rgba(58, 58, 58, 0.28);
@@ -94,7 +96,7 @@ main {
   cursor: pointer;
   font-size: 0.9rem;
 }
-.heroSection a > span {
+#span--new {
   background: green;
   padding: 5px 10px;
   display: flex;
@@ -112,14 +114,14 @@ main {
   font-weight: 100;
   font-size: 10px;
 }
-.heroSection h1 {
+#hero h1 {
   color: white;
   line-height: 5rem;
   font-size: 4rem;
   font-weight: 500;
   letter-spacing: 1.1px;
 }
-.heroSection p {
+#hero p {
   font-size: 1.1rem;
   color: rgb(237, 237, 237);
   width: 35%;
@@ -128,7 +130,7 @@ main {
   font-weight: 100;
 }
 
-.heroSection #heroCTA {
+#hero #heroCTA {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,4 +179,119 @@ main {
 
 #companyPartner img {
   width: 8rem;
+  height: 2rem;
+}
+#feature {
+  text-align: center;
+  width: 60%;
+  margin: 10rem auto 0rem;
+}
+#feature h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+#feature p {
+  color: rgb(96, 96, 96);
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+#lastVideoCard {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 600px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem 2rem;
+  height: 550px;
+  border: 0.5px solid rgba(128, 128, 128, 0.426);
+  border-radius: 20px;
+}
+.card span {
+  color: rgb(1, 139, 1);
+}
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.card p {
+  width: 60%;
+  text-align: left;
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+.card video {
+  margin-top: -2rem;
+  border: 0px;
+  border-style: none;
+}
+
+.card:last-child video {
+  margin-top: -5rem;
+}
+
+#enterpriseFeature {
+  background: #f2f1f1;
+  min-height: 100vh;
+  text-align: left;
+  width: 100%;
+  margin: 10rem auto;
+  padding: 7rem 20rem;
+}
+#enterpriseFeature span {
+  text-transform: uppercase;
+  color: rgb(1, 139, 1);
+  letter-spacing: 1.1px;
+  font-weight: 100;
+  display: block;
+  margin-bottom: 1rem;
+}
+#enterpriseFeature h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+#explore--div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 10rem;
+  margin-bottom: 3rem;
+}
+#enterpriseFeature p {
+  color: rgb(96, 96, 96);
+  letter-spacing: 0.21px;
+}
+
+#enterpriseFeature button {
+  background-color: #000;
+  padding: 10px 30px;
+  color: #fff;
+  letter-spacing: 1.1px;
+  border-radius: 20px;
+}
+
+.enterprise--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem 2rem;
 }

@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="container">
-        <img src="./public/logo.svg" />
+        <img src="./public/logo/logo.svg" />
         <nav>
           <ul>
             <li>Resources</li>
@@ -26,11 +26,11 @@
       </div>
     </header>
     <main>
-      <div class="heroSection">
-        <div class="heroSection__content">
+      <section id="hero">
+        <div class="hero__content">
           <a href="https://www.mintlify.com/blog/autopilot" target="_blank"
-            ><span> New </span> Self-updating docs with agent suggestions
-            <span id="span--arrow">></span></a
+            ><span id="span--new"> New </span> Self-updating docs with agent
+            suggestions <span id="span--arrow">></span></a
           >
 
           <h1>
@@ -51,18 +51,122 @@
           src="./public/project.svg"
           alt="documentationImage"
         />
-      </div>
-      <div id="companyPartner">
-        <img src="./public/logo1.svg" alt="anthropic" />
-        <img src="./public/logo1.svg" alt="anthropic" />
-        <img src="./public/logo1.svg" alt="anthropic" />
-        <img src="./public/logo1.svg" alt="anthropic" />
-        <img src="./public/logo1.svg" alt="anthropic" />
-        <img src="./public/logo1.svg" alt="anthropic" />
-        <img src="./public/logo1.svg" alt="anthropic" />
-        <img src="./public/logo1.svg" alt="anthropic" />
-      </div>
-      <div style="min-height: 100vh"></div>
+      </section>
+      <section id="companyPartner">
+        <img src="./public/logo/" alt="Anthropic" />
+        <img src="./public/logo/Coinbase.svg" alt="Coinbase" />
+        <img src="./public/logo/Microsoft.svg" alt="Microsoft" />
+        <img src="./public/logo/Perplexity.png" alt="Perplexity" />
+        <img src="./public/logo/logo8.svg" alt="HubSpot" />
+        <img src="./public/logo/X.svg" alt="X" />
+        <img src="./public/logo/PayPal.svg" alt="PayPal" />
+        <img src="./public/logo/Lovable.svg" alt="Lovable" />
+      </section>
+      <section id="feature">
+        <h2>Built for the intelligence age</h2>
+        <p>
+          Integrate AI into every part of your docs lifecycle. Woven into how
+          your <br />
+          knowledge is written, maintained, and understood by both users and
+          LLMs.
+        </p>
+        <div class="cardContainer">
+          <div class="card">
+            <span>LLMs.txt & MCP</span>
+            <h3>Built for both people and AI</h3>
+            <p>
+              Ensure your product shows up in the AI workflows users already
+              rely on. We support llms.txt, MCP, and whatever comes next.
+            </p>
+            <video
+              src="./public/videos/v1.mov"
+              width="100%"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="card" id="lastVideoCard">
+            <span>agent</span>
+            <h3>Self-updating knowledge management</h3>
+            <p>
+              Draft, edit, and maintain content with a context-aware agent. Move
+              faster and more consistently without the documentation debt.
+            </p>
+            <video
+              src="./public/videos/v2.mov"
+              width="100%"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="card">
+            <span>Assistant</span>
+            <h3>Intelligent assistance for your users</h3>
+            <p>
+              Turn every documentation visit into a guided conversation. Your AI
+              assistant understands context and delivers what users need
+            </p>
+            <video
+              src="./public/videos/v3.mov"
+              width="100%"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+        </div>
+      </section>
+      <section id="enterpriseFeature">
+        <span>Enterprise-reinvention</span>
+        <h2>
+          Bring intelligence to<br />
+          enterprise knowledge
+        </h2>
+        <div id="explore--div">
+          <p>
+            Modernize without the rebuild with enterprise-grade professional
+            service & security.
+          </p>
+          <button>Explore for enterprise</button>
+        </div>
+        <div class="cardContainer">
+          <div class="enterprise--card">
+            <img src="./public/features/logo/logo1.svg" alt="" width="40px" />
+            <h3>Intelligent assistance for your users</h3>
+            <p>
+              Turn every documentation visit into a guided conversation. Your AI
+              assistant understands context and delivers what users need
+            </p>
+          </div>
+          <div class="enterprise--card">
+            <img src="./public/features/logo/logo2.svg" alt="" width="40px" />
+            <h3>Intelligent assistance for your users</h3>
+            <p>
+              Turn every documentation visit into a guided conversation. Your AI
+              assistant understands context and delivers what users need
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="stories">
+        <div id="anthropic--storyDiv">
+          <span>Customer story </span>
+          <h2>See how Anthropic accelerates AI development with Mintlify</h2>
+          <a href="">Read story </a>
+          <div class="stats--container">
+            <div>
+              <h2>2M+</h2>
+              <p>Monthly active developers</p>
+            </div>
+            <div>
+              <h2>3+</h2>
+              <p>Products serviced: Claude API, MCP, and Claude Code</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
