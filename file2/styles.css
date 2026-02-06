@@ -3,6 +3,16 @@
   padding: 0;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 header {
@@ -42,6 +52,8 @@ nav ul {
 main {
   min-height: 100vh;
   width: 100vw;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #8585855d;
 }
 
 #headerContactButton {
@@ -250,7 +262,7 @@ main {
   min-height: 100vh;
   text-align: left;
   width: 100%;
-  margin: 10rem auto;
+  margin: 10rem auto 6rem;
   padding: 7rem 20rem;
 }
 #enterpriseFeature span {
@@ -294,4 +306,303 @@ main {
   gap: 1rem;
   width: 100%;
   padding: 2rem 2rem;
+}
+
+#anthropic--storyDiv {
+  margin-top: 10rem;
+  width: 100%;
+  background: url("./public/Story/background.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 0.75rem;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  color: #fff;
+  border-radius: 30px;
+  height: 31rem;
+  filter: brightness(100%);
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+#anthropic--storyDiv:hover {
+  filter: brightness(90%); /* Increase contrast on hover */
+}
+#anthropic--storyDiv h2 {
+  font-size: 1.5rem;
+}
+#anthropic--storyDiv a {
+  color: white;
+  text-decoration: none;
+}
+#anthropic--storyDiv p {
+  color: #ffffffcc;
+  margin-bottom: 1rem;
+}
+.stats--container {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#feature--companies {
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 4rem;
+  column-gap: 6rem;
+  padding: 2rem 4rem;
+}
+
+#feature--companies img {
+  width: 8rem;
+  height: 2rem;
+  filter: grayscale();
+}
+
+#stories {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+#stories span {
+  text-transform: uppercase;
+  color: rgb(1, 139, 1);
+  letter-spacing: 1.1px;
+  font-weight: 100;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#stories h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+#stories > p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  width: 100vw;
+  gap: 1rem;
+}
+.carousel__cardImage,
+#invisibleCard {
+  width: 400px;
+  height: 300px;
+  padding: 8rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#perplexityCard {
+  background: url("./public/Story/perplexity.png");
+  background-size: cover;
+  background-position: center;
+}
+#xCard {
+  background: url("./public/Story/x.png");
+  background-size: cover;
+  background-position: center;
+}
+#kCard {
+  background: url("./public/Story/kalshi.png");
+  background-size: cover;
+  background-position: center;
+}
+#invisibleCard {
+  visibility: hidden;
+}
+.carousel__card {
+  width: 500px;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 0.61rem;
+  filter: brightness(100%);
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+}
+.carousel__card:hover {
+  filter: brightness(80%);
+}
+
+.carousel__card p {
+  width: 100%;
+  text-align: justify;
+  color: rgb(77, 77, 77);
+}
+.carousel__card a {
+  color: rgb(84, 84, 84);
+  text-decoration: none;
+}
+.carousel__card a:hover {
+  color: green;
+}
+#carousel__button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+#carousel__button button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+#carousel__button button:first-child {
+  background-color: gray;
+}
+
+#finalCall {
+  min-height: 60vh;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+#finalCall h2 {
+  font-size: 2.5rem;
+}
+#finalCall p {
+  color: rgb(105, 104, 104);
+}
+
+#finalCall .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+#finalCall button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 40px;
+  background-color: #fff;
+  border: 0.4px solid gray;
+  color: #313131;
+}
+#finalCall button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 40px;
+}
+#finalCall button:first-child {
+  background-color: #000;
+  color: #fff;
+}
+
+#finalCall__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 300px;
+}
+#finalCall__cards div:first-child {
+  border-right: 1px solid rgba(180, 180, 180, 0.275);
+}
+#finalCall__cards div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.finalCall__image__div {
+  border-radius: 50%;
+  padding: 50px;
+  border: 1px solid rgba(207, 205, 205, 0.317);
+}
+#finalCall__cards a {
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  gap: 1rem;
+}
+#finalCall__cards a:hover {
+  color: rgb(1, 101, 1);
+}
+
+footer {
+  padding: 4rem 0rem;
+  min-height: 60vh;
+  margin: auto;
+  width: 60%;
+  border-left: 1px solid rgba(207, 205, 205, 0.317);
+  border-right: 1px solid rgba(207, 205, 205, 0.317);
+}
+
+footer .logos {
+  display: flex;
+
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #f2f1f1;
+}
+
+footer #socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+footer #externalLinks {
+  display: grid;
+  padding: 3rem 6rem;
+  column-gap: 5rem;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid #f2f1f1;
+}
+footer ul {
+  line-height: 3rem;
+  list-style: none;
+}
+footer ul li:first-child {
+  color: rgb(89, 89, 89);
+}
+
+footer #backedByDiv {
+  color: rgb(89, 89, 89);
+  padding: 3rem 4rem;
+  border-bottom: 1px solid #f2f1f1;
+}
+
+footer #copyright {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  color: rgb(89, 89, 89);
+  padding: 3rem 4rem;
+}
+footer #copyright p:first-child {
+  background-color: rgba(244, 243, 243, 0.414);
+  padding: 6px 14px;
+  color: rgb(3, 124, 3);
+  font-weight: 500;
+  border-radius: 50px;
 }
