@@ -234,7 +234,7 @@ main {
   width: 100%;
   padding: 2rem 2rem;
   height: 550px;
-  border: 0.5px solid rgba(128, 128, 128, 0.426);
+  border: 0.5px solid rgba(128, 128, 128, 0.248);
   border-radius: 20px;
 }
 .card span {
@@ -245,9 +245,8 @@ main {
   font-weight: 400;
 }
 .card p {
-  width: 60%;
+  width: 80%;
   text-align: left;
-  line-height: 1.2rem;
   font-size: 1rem;
 }
 .card video {
@@ -257,7 +256,7 @@ main {
 }
 
 .card:last-child video {
-  margin-top: -5rem;
+  margin-top: -3rem;
 }
 
 #enterpriseFeature {
@@ -561,11 +560,11 @@ footer {
 
 footer .logos {
   display: flex;
-  padding: 0 2rem;
+  padding: 0.5rem 2rem 0rem;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid #f2f1f1;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #93939330;
 }
 
 footer #socialLinks {
@@ -578,22 +577,23 @@ footer #externalLinks {
   padding: 3rem 3rem;
   column-gap: 5rem;
   grid-template-columns: repeat(5, 1fr);
-  border-bottom: 1px solid #f2f1f1;
+  border-bottom: 1px solid #93939330;
 }
 footer ul {
-  line-height: 3rem;
+  line-height: 2.2rem;
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 footer ul li:first-child {
-  color: rgb(89, 89, 89);
+  color: rgba(89, 89, 89, 0.596);
 }
 
 footer #backedByDiv {
   color: rgb(89, 89, 89);
   padding: 3rem 4rem;
-  border-bottom: 1px solid #f2f1f1;
+  border-bottom: 1px solid #93939330;
   display: flex;
   align-items: center;
   gap: 0.51rem;
