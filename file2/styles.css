@@ -14,6 +14,9 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+body {
+  background-color: #f8f8f8;
+}
 
 header {
   width: 100%;
@@ -551,14 +554,13 @@ footer {
   padding: 4rem 0rem;
   min-height: 60vh;
   margin: auto;
-  width: 60%;
+  width: 70%;
   border-left: 1px solid rgba(207, 205, 205, 0.317);
   border-right: 1px solid rgba(207, 205, 205, 0.317);
 }
 
 footer .logos {
   display: flex;
-
   padding: 0 2rem;
   justify-content: space-between;
   align-items: center;
@@ -573,7 +575,7 @@ footer #socialLinks {
 
 footer #externalLinks {
   display: grid;
-  padding: 3rem 6rem;
+  padding: 3rem 3rem;
   column-gap: 5rem;
   grid-template-columns: repeat(5, 1fr);
   border-bottom: 1px solid #f2f1f1;
@@ -581,7 +583,9 @@ footer #externalLinks {
 footer ul {
   line-height: 3rem;
   list-style: none;
+  font-size: 0.9rem;
 }
+
 footer ul li:first-child {
   color: rgb(89, 89, 89);
 }
@@ -590,19 +594,25 @@ footer #backedByDiv {
   color: rgb(89, 89, 89);
   padding: 3rem 4rem;
   border-bottom: 1px solid #f2f1f1;
+  display: flex;
+  align-items: center;
+  gap: 0.51rem;
 }
 
 footer #copyright {
   display: flex;
   font-size: 0.8rem;
   justify-content: space-between;
+  align-items: center;
   color: rgb(89, 89, 89);
   padding: 3rem 4rem;
 }
 footer #copyright p:first-child {
-  background-color: rgba(244, 243, 243, 0.414);
+  background-color: rgba(150, 148, 148, 0.151);
   padding: 6px 14px;
-  color: rgb(3, 124, 3);
   font-weight: 500;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
