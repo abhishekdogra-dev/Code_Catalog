@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Users</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body class="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen">
+    <div class="max-w-7xl mx-auto p-6">
+      <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">
+        🌍 Random Users
+      </h1>
+
+      <div class="flex justify-center mb-6">
+        <button
+          id="refreshBtn"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl shadow-md transition"
+        >
+          🔄 Refresh Users
+        </button>
+      </div>
+
+      <div id="loader" class="text-center text-lg">Loading...</div>
+
+      <div
+        id="users"
+        class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      ></div>
+    </div>
+  </body>
+</html>
