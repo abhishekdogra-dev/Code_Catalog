@@ -27,8 +27,5 @@ async function getJoke() {
     console.error(err);
   }
 }
-
-// Toggle Safe Mode
-
 // Load first joke automatically
 getJoke();
