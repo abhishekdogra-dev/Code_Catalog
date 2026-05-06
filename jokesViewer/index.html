@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jokes App</title>
+    <script defer src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-yellow-200 to-orange-300 min-h-screen flex flex-col items-center justify-center"
+  >
+    <h1 class="text-3xl font-bold mb-6">😂 Joke Generator</h1>
+
+    <div
+      id="jokeCard"
+      class="bg-white p-6 rounded-xl shadow-lg max-w-xl text-center"
+    >
+      <p id="jokeText" class="text-lg font-medium">
+        Click below to load a joke...
+      </p>
+    </div>
+
+    <div class="mt-6 flex gap-4">
+      <button
+        onclick="getJoke()"
+        class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition"
+      >
+        New Joke
+      </button>
+    </div>
+  </body>
+</html>
